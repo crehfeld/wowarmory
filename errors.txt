@@ -1,3 +1,0 @@
-[12-Jan-2011 13:51:27] PHP Fatal error:  Class 'UrlFetcher' not found in C:\ws\apache\htdocs\wowarmory\charactercrawl.php on line 34
-[12-Jan-2011 13:51:27] PHP Stack trace:
-[12-Jan-2011 13:51:27] PHP   1. {main}() C:\ws\apache\htdocs\wowarmory\charactercrawl.php:0
