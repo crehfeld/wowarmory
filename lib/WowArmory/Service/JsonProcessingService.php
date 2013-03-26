@@ -88,7 +88,7 @@ class JsonProcessingService implements Service
                     $data = json_decode($row['additional_data'], true);
                     $this->process($row, $data['region']);
                     $this->markUrlProcessedStmt->execute(['id' => $row['id']]);
-                } catch (Exception $e) {
+                } catch (\Exception $e) {
                     $this->markUrlFailedStmt->execute(['id' => $row['id']]);
                     printf("failure, row id=%d", $row['id']);
                     echo $e->getMessage();
