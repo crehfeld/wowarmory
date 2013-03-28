@@ -91,6 +91,9 @@ class JsonProcessingService implements Service
                 } catch (\Exception $e) {
                     $this->markUrlFailedStmt->execute(['id' => $row['id']]);
                     printf("failure, row id=%d", $row['id']);
+					error_log(sprintf("failure, row id=%d", $row['id']));
+					error_log($e->getMessage());
+					printf("failure, row id=%d", $row['id']);
                     echo $e->getMessage();
                 }
                 echo $this->rowProcessed($row) . "\n";
