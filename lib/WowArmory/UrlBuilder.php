@@ -49,7 +49,7 @@ class UrlBuilder {
    }
    static function auctionHouseDumpFileListUrl($region, $realm) {
         return sprintf(
-            "http://%s.battle.net/api/wow/auction/%s",
+            "http://%s.battle.net/api/wow/auction/data/%s",
             rawurlencode($region),
             rawurlencode($realm)
         );
